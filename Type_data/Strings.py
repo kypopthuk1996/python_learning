@@ -25,4 +25,44 @@ print(c1[1::2]) #Все нечетные цифры
 print(c1[0::2]) #Все четные цифры
 print(c1[::-1]) #Срез в обратном порядке
 
+#Методы для строк
+#upper - перевод в заглавные буквы
+string="FastEthernet"
+print(string.upper())
+
+#lower - перевод в строчные буквы
+print(string.lower())
+
+#swapcase - смена заглавных на строчные
+print(string.swapcase())
+
+#count - подсчет того, сколько раз символ или подстрока встречаются в строке
+hq="alo, alo, Alo, al"
+print(hq.count("alo"))
+
+#find - поиск до символа, выводит позицию 1 совпадения
+print(string.find("Et"))
+
+#startswitch - начинается ли строка на эти символы
+print(string.startswith("Fas"))
+
+#endswitch - заканчивается ли строка на эти смволы
+print(string.endswith("e"))
+
+#replace - замена символов в строке на другие
+print(string.replace('Fast', 'Gigabit'))
+
+#strip - удаляет в конце и в начале спец символы, можно передать свои
+gg='[12.42]'
+print(gg)
+print(gg.strip('[]'))
+
+#split - разбивает строку на части, используя разделитель
+string1 = ' switchport trunk allowed vlan 10,20,30,100-200\n'
+com=string1.strip().split()
+print(com)
+print(com[-1].split(','))
+
+
+
 

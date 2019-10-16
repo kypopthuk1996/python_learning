@@ -2,8 +2,8 @@
 import os
 import json
 
-pathJsonScript = '/Users/dmitrijminor/ecss-pysipp-tests'
-tag = " \'Tags\': [],"
+pathJsonScript = '/Users/dmitrijminor/tests'
+tag = " \'Tags\': [\"ssw\",\"ecss3.14\"],"
 vrs = " \'InitVrs\': [{\'NodeName\': \'ecss-node-3.14\',\'NodeVrs\': \'3.14.2.33\' }],"
 res = 0
 

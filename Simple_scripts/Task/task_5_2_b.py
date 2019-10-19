@@ -10,14 +10,13 @@
 #/24
 #255       255       255       0
 #11111111  11111111  11111111  00000000
+from sys import argv
 
-pr_1 = input('Введить ip и маску: ')
+net = argv[1]
+msk = argv[2]
+msk = str('/' + msk)
 print('\nNetwork:')
-srh = int(pr_1.find('/'))
-net = pr_1[:srh]
-msk = pr_1[srh:]
-#print(net)
-#print(msk)
+
 net_list = net.split('.')
 a0 = int(net_list[0])
 a1 = int(net_list[1])

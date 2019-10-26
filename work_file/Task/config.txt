@@ -1,0 +1,9 @@
+service timestamps debug alias datetime msec localtime show-timezone year
+service timestamps log datetime msec localtime show-timezone year
+service password-encryption Current configuration
+service sequence-numbers
+!
+no ip domain lookup duplex
+!
+ip ssh version 2
+!
